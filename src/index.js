@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
+//import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Titulo from './components/Titulo';
+import Botones from './components/Botones';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Titulo></Titulo>
+    <Botones></Botones>
   </React.StrictMode>,
   document.getElementById('root')
 );
