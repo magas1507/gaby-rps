@@ -1,0 +1,15 @@
+.title {
+  color: black;
+}
+
+.title-rock {
+  color: yellow;
+}
+
+.title-paper {
+  color: blue;
+}
+
+.title-scissors {
+  color: red;
+}
