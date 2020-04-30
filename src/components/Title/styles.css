@@ -1,15 +1,16 @@
 .title {
   color: black;
+  text-align: center;
 }
 
 .title-rock {
-  color: yellow;
+  color: #98747d;
 }
 
 .title-paper {
-  color: blue;
+  color: #688580;
 }
 
 .title-scissors {
-  color: red;
+  color: #8b8b8b;
 }

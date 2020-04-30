@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Title from './components/Title';
-import Button from './components/Botones';
+import Options from './components/Options';
 
 function App() {
   return (
     <div className='App'>
       <Title />
-      <Button />
+      <Options />
     </div>
   );
 }
