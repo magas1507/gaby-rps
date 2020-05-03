@@ -1,9 +1,11 @@
-.imagen-paper{
-    width: 100px;
-    align-content: center;
+.imagen-paper {
+  width: 100px;
+  align-content: center;
+  cursor: pointer;
 }
 
-.options-div{
-    display:flex;
-    
+.options-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
