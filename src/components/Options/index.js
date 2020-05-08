@@ -8,38 +8,43 @@ const Options = () => {
   //const [text, setText] = useState('Hola');
 
   async function cpuAsync() {
-    let response = await fetch("https://smartplay.afiniti.com/v1/play/");
+    try {
+      let response = await fetch("https://smartplay.afiniti.com/v1/play/");
 
-    let data = await response.json();
+      let data = await response.json();
 
-    return data;
+      return data;
+    } catch (err) {
+      console.log(err.message);
+    }
   }
 
-  const imageClick = (str) => {
-    cpuAsync()
-      .then((data) => {
-        console.log(str, data.nextBestMove);
-        let resolvetCpu = data.nextBestMove;
+  const imageClick = async (str) => {
+    try {
+      let data = await cpuAsync();
 
-        if (str === "P" && resolvetCpu === "S") {
-          console.log(`perdiste`);
-        } else if (str === "P" && resolvetCpu === "R") {
-          console.log("ganaste");
-        } else if (str === "S" && resolvetCpu === "R") {
-          console.log(`perdiste`);
-        } else if (str === "S" && resolvetCpu === "P") {
-          console.log(`Ganaste`);
-        } else if (str === "R" && resolvetCpu === "P") {
-          console.log("perdiste");
-        } else if (str === "R" && resolvetCpu === "S") {
-          console.log("ganaste");
-        } else {
-          console.log("Wrap");
-        }
-      })
-      .catch((reason) => console.log(reason.message));
+      console.log(str, data.nextBestMove);
+      let resolvetCpu = data.nextBestMove;
+
+      if (str === "P" && resolvetCpu === "S") {
+        console.log(`perdiste`);
+      } else if (str === "P" && resolvetCpu === "R") {
+        console.log("ganaste");
+      } else if (str === "S" && resolvetCpu === "R") {
+        console.log(`perdiste`);
+      } else if (str === "S" && resolvetCpu === "P") {
+        console.log(`Ganaste`);
+      } else if (str === "R" && resolvetCpu === "P") {
+        console.log("perdiste");
+      } else if (str === "R" && resolvetCpu === "S") {
+        console.log("ganaste");
+      } else {
+        console.log("Wrap");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
   };
-
   return (
     <div className="options-div">
       <img
