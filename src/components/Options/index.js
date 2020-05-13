@@ -39,7 +39,7 @@ const Options = () => {
       } else if (str === "R" && resolvetCpu === "S") {
         console.log("ganaste");
       } else {
-        console.log("Wrap");
+        console.log("Draw");
       }
     } catch (error) {
       console.log(error.message);
