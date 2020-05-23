@@ -1,9 +1,7 @@
 import React from 'react';
-import paper from './paper.png';
-import rock from './rock.png';
-import scissors from './scissors.png';
-import { useState } from 'react';
 import './style.css';
+
+import Button from '../Button';
 
 const Options = ({ addOneCpu, addOnePlayer }) => {
   // const { addOneCpu, addOnePlayer } = props;
@@ -46,26 +44,12 @@ const Options = ({ addOneCpu, addOnePlayer }) => {
       console.log(error.message);
     }
   };
+
   return (
     <div className='options-div'>
-      <img
-        className='imagen-paper'
-        src={paper}
-        alt='imag'
-        onClick={() => imageClick('P')}
-      ></img>
-      <img
-        className='imagen-paper'
-        src={rock}
-        alt='imag'
-        onClick={() => imageClick('R')}
-      ></img>
-      <img
-        className='imagen-paper'
-        src={scissors}
-        alt='imag'
-        onClick={() => imageClick('S')}
-      ></img>
+      <Button type='P' handleClick={() => imageClick('P')} />
+      <Button type='R' handleClick={() => imageClick('R')} />
+      <Button type='S' handleClick={() => imageClick('S')} />
     </div>
   );
 };

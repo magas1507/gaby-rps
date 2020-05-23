@@ -1,0 +1,24 @@
+.option-button {
+  width: 128px;
+  height: 128px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 0.5em;
+  border: 2px solid gray;
+}
+
+.option-button-img {
+  width: 100%;
+}
+
+.option-button-P {
+  border: 2px solid #37514c;
+}
+
+.option-button-S {
+  border: 2px solid #535353;
+}
+
+.option-button-R {
+  border: 2px solid #63434c;
+}
