@@ -40,11 +40,7 @@ const Options = ({ addOneCpu, addOnePlayer }) => {
         console.log('ganaste');
         addOnePlayer();
       } else {
-<<<<<<< HEAD
         console.log("Draw");
-=======
-        console.log('Draw');
->>>>>>> 24a8cfc8533ae6a74eaacba8fe9545e31cb5c96b
       }
     } catch (error) {
       console.log(error.message);
