@@ -1,7 +1,6 @@
 .container-timeline {
   display: flex;
   justify-content: center;
-  flex-direction: row-reverse;
 }
 .timeline-line-linear {
   width: 50%;
