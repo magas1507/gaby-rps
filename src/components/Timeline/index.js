@@ -10,9 +10,10 @@ const Timeline = (props) => {
 
         return (
           <div className="container-timeline" key={index}>
-            <Line type={player} />
-            <div className="timeline-line-linear"></div>
             <Line type={cpu} />
+            <div className="timeline-line-linear"></div>
+
+            <Line type={player} />
           </div>
         );
       })}
