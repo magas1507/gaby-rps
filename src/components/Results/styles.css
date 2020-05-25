@@ -1,7 +1,15 @@
-.container {
+.container-result {
   display: flex;
-  flex-flow: column;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  font-size: 14px;
+}
+
+.results-point {
+  margin-right: 4%;
+  text-align: center;
+}
+
+.result-espacio {
+  margin-top: 51px;
+  margin-left: -28px;
 }

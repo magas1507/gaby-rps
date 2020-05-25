@@ -1,0 +1,11 @@
+.line-figure {
+  display: inline-flex;
+}
+.line-img {
+  text-align: center;
+}
+
+.line-linear {
+  width: 15px;
+  border-top: black solid;
+}

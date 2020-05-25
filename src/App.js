@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-
+import "./app.css";
 import Title from "./components/Title";
 import Options from "./components/Options";
 import Results from "./components/Results";
+import Timeline from "./components/Timeline";
 
 function App() {
   const [cpuPoints, setCpuPoints] = useState(0); // ESTADO const cpuPoints = 0;
@@ -24,7 +25,7 @@ function App() {
     console.log(partidas);
   }, [partidas]);
   return (
-    <div className="App">
+    <div className="app-container">
       <Title />
       <Options
         addOneCpu={addOneCpu}
@@ -33,6 +34,7 @@ function App() {
       />
 
       <Results playerPoints={playerPoints} cpuPoints={cpuPoints} />
+      <Timeline partidas={partidas} />
     </div>
   );
 }

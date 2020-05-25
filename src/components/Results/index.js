@@ -1,12 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import './styles.css';
+import "./styles.css";
 
 const Results = (props) => {
   return (
-    <div className='container'>
-      <h1>Me: {props.playerPoints}</h1>
-      <h1>CPU: {props.cpuPoints}</h1>
+    <div className="container-result">
+      <h1 className="results-point">
+        Me
+        <br /> {props.playerPoints}{" "}
+      </h1>
+      <h1 className="result-espacio">-</h1>
+      <h1 className="results-point">
+        CPU
+        <br />
+        {props.cpuPoints}
+      </h1>
     </div>
   );
 };
