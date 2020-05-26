@@ -4,8 +4,10 @@ import Title from "./components/Title";
 import Options from "./components/Options";
 import Results from "./components/Results";
 import Timeline from "./components/Timeline";
+import Loader from "./components/Loader";
 
 function App() {
+  const [loading, setLoading] = useState(false);
   const [cpuPoints, setCpuPoints] = useState(0); // ESTADO const cpuPoints = 0;
   const [playerPoints, setPlayerPoints] = useState(0); // ESTADO
   const [partidas, setPartidas] = useState([]);
@@ -28,6 +30,8 @@ function App() {
     <div className="app-container">
       <Title />
       <Options
+        loading={loading}
+        setLoading={(action) => setLoading(action)}
         addOneCpu={addOneCpu}
         addOnePlayer={addOnePlayer}
         contPartidas={contPartidas}

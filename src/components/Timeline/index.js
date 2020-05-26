@@ -5,7 +5,7 @@ import "./styles.css";
 const Timeline = (props) => {
   return (
     <div className="container">
-      {props.partidas.map(function (partida, index) {
+      {props.partidas.reverse().map(function (partida, index) {
         let { player, cpu } = partida;
 
         return (

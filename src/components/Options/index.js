@@ -3,8 +3,14 @@ import React from "react";
 import "./style.css";
 
 import Button from "../Button";
-
-const Options = ({ addOneCpu, addOnePlayer, contPartidas }) => {
+import Loader from "../Loader";
+const Options = ({
+  addOneCpu,
+  addOnePlayer,
+  contPartidas,
+  loading,
+  setLoading,
+}) => {
   // const { addOneCpu, addOnePlayer } = props;
 
   async function cpuAsync() {
@@ -15,9 +21,10 @@ const Options = ({ addOneCpu, addOnePlayer, contPartidas }) => {
 
   const imageClick = async (str) => {
     try {
+      setLoading(true);
       let data = await cpuAsync();
 
-      console.log("immprimiendo", str, data.nextBestMove);
+      console.log("imprimiendo", str, data.nextBestMove);
       let resolvetCpu = data.nextBestMove;
       const partida = { player: str, cpu: data.nextBestMove };
       contPartidas(partida);
@@ -42,6 +49,7 @@ const Options = ({ addOneCpu, addOnePlayer, contPartidas }) => {
       } else {
         console.log("Draw");
       }
+      setLoading(false);
     } catch (error) {
       console.log(error.message);
     }
@@ -49,9 +57,15 @@ const Options = ({ addOneCpu, addOnePlayer, contPartidas }) => {
 
   return (
     <div className="options-div">
-      <Button type="P" handleClick={() => imageClick("P")} />
-      <Button type="R" handleClick={() => imageClick("R")} />
-      <Button type="S" handleClick={() => imageClick("S")} />
+      {loading ? (
+        <Loader />
+      ) : (
+        <React.Fragment>
+          <Button type="P" handleClick={() => imageClick("P")} />
+          <Button type="R" handleClick={() => imageClick("R")} />
+          <Button type="S" handleClick={() => imageClick("S")} />
+        </React.Fragment>
+      )}
     </div>
   );
 };
