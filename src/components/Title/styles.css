@@ -1,6 +1,7 @@
 .title {
   color: black;
   text-align: center;
+  font-size: 35px;
 }
 
 .title-rock {
@@ -13,4 +14,10 @@
 
 .title-scissors {
   color: #8b8b8b;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 22px;
+  }
 }

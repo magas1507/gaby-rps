@@ -1,6 +1,6 @@
 .option-button {
-  width: 128px;
-  height: 128px;
+  width: 139px;
+  height: 137px;
   background-color: white;
   border-radius: 5px;
   margin: 0 0.5em;
@@ -21,4 +21,11 @@
 
 .option-button-R {
   border: 2px solid #63434c;
+}
+
+@media (max-width: 600px) {
+  .option-button {
+    width: 82px;
+    height: 82px;
+  }
 }

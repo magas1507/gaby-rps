@@ -4,7 +4,6 @@ import Title from "./components/Title";
 import Options from "./components/Options";
 import Results from "./components/Results";
 import Timeline from "./components/Timeline";
-import Loader from "./components/Loader";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,6 +28,7 @@ function App() {
   return (
     <div className="app-container">
       <Title />
+      <div className="app-linear"></div>
       <Options
         loading={loading}
         setLoading={(action) => setLoading(action)}

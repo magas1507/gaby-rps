@@ -13,3 +13,18 @@
   margin-top: 51px;
   margin-left: -28px;
 }
+
+@media (max-width: 600px) {
+  .results-point {
+    margin-right: 9%;
+    text-align: center;
+  }
+
+  .container-result {
+    font-size: 11px;
+  }
+  .result-espacio {
+    margin-top: 41px;
+    margin-left: -27px;
+  }
+}
