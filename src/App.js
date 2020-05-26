@@ -38,7 +38,9 @@ function App() {
       />
 
       <Results playerPoints={playerPoints} cpuPoints={cpuPoints} />
-      <Timeline partidas={partidas} />
+      <div className="timeline">
+        <Timeline partidas={partidas} />
+      </div>
     </div>
   );
 }

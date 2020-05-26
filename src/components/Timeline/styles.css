@@ -1,3 +1,7 @@
+.timeline {
+  overflow: scroll;
+  height: 400px;
+}
 .container-timeline {
   display: flex;
   justify-content: center;
@@ -5,7 +9,7 @@
 }
 .timeline-line-linear {
   width: 50%;
-  border-top: solid 2px#00000042;
+  border-top: solid 2px #00000042;
   margin-top: 30px;
   margin-right: 10px;
   margin-left: 10px;
