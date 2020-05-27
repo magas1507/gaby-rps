@@ -20,7 +20,7 @@ function App() {
     //console.log(partida);
   };
   const contPartidas = (partida) => {
-    setPartidas(partidas.concat([partida]));
+    setPartidas([partida, ...partidas]);
   };
   useEffect(() => {
     console.log(partidas);
