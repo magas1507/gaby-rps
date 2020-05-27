@@ -2,25 +2,25 @@
   width: 139px;
   height: 137px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 0 0.5em;
   border: 2px solid gray;
 }
 
 .option-button-img {
-  width: 100%;
+  width: 96%;
 }
 
 .option-button-P {
-  border: 3px solid #37514c;
+  border: 4px solid #37514c;
 }
 
 .option-button-S {
-  border: 3px solid #535353;
+  border: 4px solid #535353;
 }
 
 .option-button-R {
-  border: 3px solid #63434c;
+  border: 4px solid #63434c;
 }
 
 @media (max-width: 600px) {
