@@ -24,7 +24,6 @@ const Options = ({
       setLoading(true);
       let data = await cpuAsync();
 
-      console.log("imprimiendo", str, data.nextBestMove);
       let resolvetCpu = data.nextBestMove;
       const partida = { player: str, cpu: data.nextBestMove };
       contPartidas(partida);

@@ -3,8 +3,15 @@
   flex-direction: column;
   align-items: center;
   font-size: 17px;
-  background-color: #00000026;
+  background-color: #f8f8f8;
   margin-bottom: 20px;
+  width: 60%;
+  align-content: center;
+}
+@media (max-width: 600px) {
+  .container-result {
+    width: 100%;
+  }
 }
 .result-h1 {
   display: flex;
@@ -29,18 +36,3 @@ h4 {
   margin-left: 10px;
   margin-right: 10px;
 }
-
-/*@media (max-width: 600px) {
-  .results-point {
-    margin-right: 9%;
-    text-align: center;
-  }
-
-  .container-result {
-    font-size: 11px;
-  }
-  .result-espacio {
-    margin-top: 41px;
-    margin-left: -27px;
-  }
-}*/

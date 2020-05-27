@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./app.css";
 import Title from "./components/Title";
 import Options from "./components/Options";
@@ -10,21 +10,16 @@ function App() {
   const [cpuPoints, setCpuPoints] = useState(0); // ESTADO const cpuPoints = 0;
   const [playerPoints, setPlayerPoints] = useState(0); // ESTADO
   const [partidas, setPartidas] = useState([]);
-  //console.log(partidas);
+
   const addOneCpu = (partida) => {
     setCpuPoints(cpuPoints + 1);
-    //console.log(partida);
   };
   const addOnePlayer = (partida) => {
     setPlayerPoints(playerPoints + 1);
-    //console.log(partida);
   };
   const contPartidas = (partida) => {
     setPartidas([partida, ...partidas]);
   };
-  useEffect(() => {
-    console.log(partidas);
-  }, [partidas]);
   return (
     <div className="app-container">
       <Title />
