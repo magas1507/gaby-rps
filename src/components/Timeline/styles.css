@@ -1,6 +1,7 @@
 .timeline {
   overflow-y: auto;
   height: 461px;
+  width: 100%;
 }
 .container-timeline {
   display: flex;
@@ -8,7 +9,7 @@
   margin-bottom: 14px;
 }
 .timeline-line-linear {
-  width: 50%;
+  width: 62%;
   border-top: solid 2px #00000042;
   margin-top: 30px;
   margin-right: 10px;

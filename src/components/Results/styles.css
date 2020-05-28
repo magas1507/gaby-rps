@@ -5,17 +5,12 @@
   font-size: 17px;
   background-color: #f8f8f8;
   margin-bottom: 20px;
-  width: 60%;
+  width: 100%;
   align-content: center;
 }
 @media (max-width: 600px) {
   .container-result {
     width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .container-result {
-    width: 59%;
   }
 }
 .result-h1 {
