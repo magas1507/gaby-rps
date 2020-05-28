@@ -13,6 +13,11 @@
     width: 100%;
   }
 }
+@media (min-width: 768px) {
+  .container-result {
+    width: 59%;
+  }
+}
 .result-h1 {
   display: flex;
 }

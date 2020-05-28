@@ -1,7 +1,6 @@
 .timeline {
-  overflow: scroll;
+  overflow-y: auto;
   height: 461px;
-  width: 89%;
 }
 .container-timeline {
   display: flex;
