@@ -4,8 +4,8 @@
   align-items: center;
   font-size: 17px;
   background-color: #f8f8f8;
-  margin-bottom: 20px;
-  width: 100%;
+  margin: 1em 0;
+  width: 92%;
   align-content: center;
 }
 @media (max-width: 600px) {
@@ -13,26 +13,32 @@
     width: 100%;
   }
 }
+
 .result-h1 {
   display: flex;
 }
 h4 {
-  margin-left: 10px;
+  margin-left: 19px;
+  margin-right: 13px;
+  margin-block-end: 0;
 }
 .result-points {
   display: flex;
   flex-direction: row;
-  margin-top: -23px;
+  font-size: 24px;
 }
 .results-point1 {
   order: 1;
+  margin: 0;
 }
 .results-point2 {
   order: 3;
+  margin: 0;
 }
 
 .result-espacio {
   order: 2;
   margin-left: 10px;
+  margin-top: 0;
   margin-right: 10px;
 }

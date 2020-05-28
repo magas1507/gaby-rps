@@ -3,13 +3,14 @@
   height: 461px;
   width: 100%;
 }
+
 .container-timeline {
   display: flex;
   justify-content: center;
   margin-bottom: 14px;
 }
 .timeline-line-linear {
-  width: 62%;
+  width: 54%;
   border-top: solid 2px #00000042;
   margin-top: 30px;
   margin-right: 10px;
